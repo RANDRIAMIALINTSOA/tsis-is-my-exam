@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #9EABA2;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    /* padding: 0; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    /* transition: background-color 0.9s; */
+    
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+#home h1{
+    font-family: "Satisfy", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 400px;
+}
+
+#home h3{
+    font-family: "Satisfy", serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 330px;
+}
+#home h3{
+    color: #A33757;
+}
+#home h1{
+  color: #A33757;
+}
+
+#about h1{
+    font-family: "Satisfy", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 590px;
+}
+
+#about h3{
+    font-family: "Satisfy", serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 200px;
+}
+#about h3{
+    color: #DC586D;
+}
+#about h1{
+  color: #DC586D;
+}
+
+#fragrances{
+    font-family: "Satisfy", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#fragrances h3{
+    font-family: "Satisfy", serif;
+    font-weight: 900;
+    font-style: normal; 
+}
+#fragrances h3{
+    margin-left: 350px;
+    color: #728156;
+}
+#fragrances h1{
+    margin-left: 550px;
+  color: #728156;
+}
+
+.contenu{
+    display: flex;
+    justify-content: space-between;
+}
+.contenu img{
+    width: 400px;
+    height: 300px;
+}
+input{
+    margin: 0px 30px 50px 40%;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+input{ 
+    border-radius: 10px;
+    color: gray;
+    height: 30px;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+footer {
+    background-color:  #9EABA2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 15px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Styles pour la responsivité */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Colonne pour les petits écrans */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espacement vertical */
+    }
+
+    main {
+        padding: 10px; /* Moins de padding pour les petits écrans */
+    }
+
+    section {
+        margin: 10px 0; /* Moins d'espace entre les sections */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Réduction de la taille du titre principal */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Réduction de la taille des sous-titres */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Ajustement du padding des liens */
+    }
+}
